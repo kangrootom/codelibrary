@@ -1,0 +1,2 @@
+EasyUi各组件的使用，fusioncharts图标组件的具体使用（参考annualStatisticChartUI.jsp,ComplainServlet.java,ComplainService.java，ComplainDao.java），
+数据库使用C3P0和DButils,同时使用了json库

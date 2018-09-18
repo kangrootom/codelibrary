@@ -1,0 +1,1 @@
+SSH经典案例，所有的配置细节，bean采用setter方法注入，引入了spring-quartz设置定时任务,使用了WdatePicker组件,jdk1.8

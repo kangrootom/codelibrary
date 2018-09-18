@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.itcast.entity" auto-import="true">
+    <class name="Fruit" table="fruit">
+        <!-- 主键字段 -->
+        <id name="fid" column="fid">
+            <generator class="sequence">
+            	<param name="sequence">fruit_seq</param>
+            </generator>
+        </id>
+        <!-- 产品名称 -->
+        <property name="fname" type="java.lang.String" column="fname" length="64" not-null="true"></property>
+        <!-- 产品价格 -->
+        <property name="fprice" column="fprice" type="java.lang.Float" not-null="true"></property>
+        <!-- 产品产地 -->
+        <property name="faddress" column="faddress" type="java.lang.String" length="64" not-null="true"></property>
+        <!-- 产品样图 -->
+        <property name="fimgsrc" column="fimgsrc" length="64" type="java.lang.String" not-null="false"></property>
+    </class>
+</hibernate-mapping>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1,user-scalable=no">
+    <meta name="description" content="">
+    <title>Template for Bootstrap</title>
+    <link href="../bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <script src="../bootstrap/js/jquery.min.js"></script>
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <div style="margin:100px"></div>
+    <div class="container" style="background: #e6e6e6">
+        <button type="button" id="aButton"  class="btn btn-primary" data-complete-text="finished!" autocomplete="off">
+          a button
+        </button>
+        <hr/>
+        <button type="button" id="toggle">toggle</button>
+        <button type="button" id="s">string</button>
+        <button type="button" id="reset">reset</button>
+    </div>
+     <script>
+          $('#toggle').on('click', function () {
+            $("#aButton").button("toggle");
+          });
+          
+          $('#s').on('click', function () {
+            $("#aButton").button("complete");
+          });
+          
+          $('#reset').on('click', function () {
+            $("#aButton").button("reset");
+          });
+    </script>
+  </body>
+</html>

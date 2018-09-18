@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC 
+"-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="cn.itcast.entity" auto-import="true">
+    <class name="Admin" table="ADMIN">
+        <!-- 主键字段 -->
+        <id name="aid" column="aid">
+            <generator class="sequence">
+            	<param name="sequence">admin_seq</param>
+            </generator>
+        </id>
+        <!-- 用户名 -->
+        <property name="aname" column="aname" type="java.lang.String" length="64" not-null="true"></property>
+        <!-- 登录密码 -->
+        <property name="apwd" column="apwd" type="java.lang.String" length="64" not-null="true"></property>
+        
+    </class>
+</hibernate-mapping>
